@@ -17,13 +17,13 @@ app.get('/',function(req,res){
 function findSum (arr, num) {
   var min = 0;
   var max = arr.length;
-  if ( (arr[max] * 2) < num) {
+  if ( (parseInt(arr[max]) * 2) < num) {
     return false;
   } 
   do {
-    if (arr[min] + arr[max] == num) {
+    if (parseInt(arr[min]) + parseInt(arr[max]) == num) {
       return true;
-    } else if (arr[min] + arr[max] < num) {
+    } else if (parseInt(arr[min]) + parseInt(arr[max]) < num) {
       min++;
     } else {
       max--;
@@ -31,6 +31,7 @@ function findSum (arr, num) {
   } while (min < max);
   return false;
 };
+
 
 var storage = multer.memoryStorage()
 var upload = multer({ storage: storage })
