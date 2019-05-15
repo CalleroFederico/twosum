@@ -19,12 +19,12 @@
 
 Mejoras posibles:
 
-*Ingresar por texto el array directamente.
-*Validación de fichero
-*Validación de elementos.
-*Logs.
-*Registros de busqueda | hash de arrays para cachear resultados.
-*Generador aleatorio de arrays para buscar.
-*Deploy en kubernetes.
-*Reject en concurrencia para prevenir fallos TCP.
-*Mejoras de interfaz.
+* Ingresar por texto el array directamente.
+* Validación de fichero
+* Validación de elementos.
+* Logs.
+* Registros de busqueda | hash de arrays para cachear resultados.
+* Generador aleatorio de arrays para buscar.
+* Deploy en kubernetes.
+* Reject en concurrencia para prevenir fallos TCP.
+* Mejoras de interfaz.
