@@ -55,6 +55,9 @@ app.post('/uploadfile', upload.single('myFile'), (req, res, next) => {
   
 });
  
+const server = app.listen(8080, () => {
+  const host = server.address().address;
+  const port = server.address().port;
 
- 
-app.listen(3000, () => console.log('Server started on port 3000'));
+  console.log(`Example app listening at http://${host}:${port}`);
+});
